@@ -1,5 +1,6 @@
-Names: Alexander Sharpe and Cristobal Benavides
+# Final Project: Matching
 
+Names: Alexander Sharpe and Cristobal Benavides
 
 |           File name           |        Number of edges       |
 | ------------------------------| ---------------------------- |
