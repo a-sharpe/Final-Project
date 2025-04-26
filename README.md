@@ -2,6 +2,8 @@
 
 Names: Alexander Sharpe and Cristobal Benavides
 
+## Results Table
+
 |           File name           |        Number of edges       | Size of Matching | Run Time | Core Configuration |
 | ------------------------------| ---------------------------- | --- | ----| ---|
 | com-orkut.ungraph.csv         | 117185083                    | | | |
@@ -11,4 +13,10 @@ Names: Alexander Sharpe and Cristobal Benavides
 | musae_ENGB_edges.csv          | 35324                        | | | |
 | log_normal_100.csv            | 2671                         | | | |
 
+## Description of Approaches: 
 
+### Theoretical Merits:
+
+### Scalability 
+
+## Algorithm Advantages
