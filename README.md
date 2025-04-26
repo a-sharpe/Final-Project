@@ -13,11 +13,17 @@ Names: Alexander Sharpe and Cristobal Benavides
 | musae_ENGB_edges.csv          | 35324                        | | | |
 | log_normal_100.csv            | 2671                         | | | |
 
+* Output files can be found in ___.zip
+  
 ## Description of Approaches: 
 
-- ### Theoretical Merits:
+- ### Technical Details:
 - ### Scalability:
-- ### Depth of Technicality:
-- ### Novelty?:
 
 ## Algorithm Advantages
+
+- ### Theoretical Merits:
+- ### Novelty?:
+
+## Link to 5/2 Slideshow:
+
