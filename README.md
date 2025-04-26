@@ -17,6 +17,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 
 - ### Theoretical Merits:
 - ### Scalability:
-- 
+- ### Depth of Technicality:
+- ### Novelty?:
 
 ## Algorithm Advantages
