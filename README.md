@@ -25,5 +25,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 - ### Theoretical Merits:
 - ### Novelty?:
 
-## Link to 5/2 Slideshow: https://docs.google.com/presentation/d/1Ik2CgcAqT0gtpXBfQG9XTDm2ihWtSrsJrG6OwSOMZTU/edit#slide=id.p
+## Link to 5/2 Slideshow: 
+
+https://docs.google.com/presentation/d/1Ik2CgcAqT0gtpXBfQG9XTDm2ihWtSrsJrG6OwSOMZTU/edit#slide=id.p
 
