@@ -13,7 +13,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 | musae_ENGB_edges.csv          | 35324                        | | | |
 | log_normal_100.csv            | 2671                         | | | |
 
-** Output files can be found in file_solutions.zip *
+** Output files can be found in file_solutions.zip 
   
 ## Description of Approaches: 
 
