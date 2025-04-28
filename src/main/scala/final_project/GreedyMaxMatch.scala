@@ -46,6 +46,8 @@ object MaxMatchDriver {
 
     println(s"Reading input graph from $inputPath...")
 
+    val startTimeMillis = System.currentTimeMillis()
+    
     val rawEdges: RDD[Edge[Int]] = sc.textFile(inputPath).map { line =>
       val Array(src, dst) = line.split(",")
       Edge(src.toLong, dst.toLong, 1)
@@ -59,6 +61,12 @@ object MaxMatchDriver {
 
     val matchedCount = matchedEdges.count()
 
+    val endTimeMillis = System.currentTimeMillis()
+    val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
+    println("==================================")
+    println("algorithm completed in " + durationSeconds + "s.")
+    println("==================================")
+    
     println(s"Matched edges = $matchedCount")
     if (matchedCount == 0) {
       println("WARNING: No edges matched – output will be empty.")
