@@ -15,15 +15,16 @@ Names: Alexander Sharpe and Cristobal Benavides
 
 ** Output files can be found in file_solutions.zip (all output files passed the verifier) 
   
-## Description of Approaches: 
+## Approach 1: 
 
-- ### Technical Details:
-- ### Scalability:
+The first approach we used was a fairly simple and greedy algorithm. This algorithm has two phases. The first phase consists of a local greedy pass during which each partition (executor) scans its edges and chooses a conflict free matching subset. The second phase searches for conflicts between the partitions by selecting only edge per vertex for the matching and removing any duplicates. This approach allows for scalability as it partitions the input file, and then sends each partition to a separate executor that creates a small subset of the total matching. These subsets are then combined to create the final matching. Additionally, one can increase the number of partitions manually for larger files by editing the line "sc.textFile(input_path, numPartitions)." While it is quite simple, it is also extremely fast for smaller files and as shown by the results above, was quite accurate: we know that the perfect solution to the matching problem is upper bounded by $$\cap $$ 
 
-## Algorithm Advantages
+- Technical Details: 
+- Scalability:
+- Theoretical Merits:
+- Novelty?:
 
-- ### Theoretical Merits:
-- ### Novelty?:
+## Approach 2: 
 
 ## Link to 5/2 Slideshow: 
 
