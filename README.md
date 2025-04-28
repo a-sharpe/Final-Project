@@ -10,7 +10,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 | twitter_original_edges.csv    | 63555749                     | | | | |
 | soc-LiveJournal1.csv          | 42851237                     | | | | |
 | soc-pokec-relationships.csv   | 22301964                     | | | | |
-| musae_ENGB_edges.csv          | 35324                        | | | | |
+| musae_ENGB_edges.csv          | 35324                        | 2443 | 2 | 2x2 | GreedyMaxMatch |
 | log_normal_100.csv            | 2671                         | 50 | 1 | 2x2 | GreedyMaxMatch|
 
 ** Output files can be found in file_solutions.zip (all output files passed the verifier) 
