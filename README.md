@@ -8,7 +8,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 | ------------------------------| ---------------------------- | --- | ----| ---| --- | --|
 | com-orkut.ungraph.csv         | 117185083                    | | | |  | |
 | twitter_original_edges.csv    | 63555749                     | | | | | |
-| soc-LiveJournal1.csv          | 42851237                     | | | | | |
+| soc-LiveJournal1.csv          | 42851237                     | 1571286 |490  | 3x4 on Standard Disk | 9 | Luby |
 | soc-pokec-relationships.csv   | 22301964                     | 595408 | 430 | 2x2 | __ | Luby|
 | soc-pokec-relationships.csv   | 22301964                     | 740487 | 437 | 2x2, 200 partitions| __ | GreedyMaxMatch|
 | musae_ENGB_edges.csv          | 35324                        | 2259 | 62 | 2x2 | 5 | Luby |
