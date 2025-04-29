@@ -16,6 +16,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 | log_normal_100.csv            | 2671                         | 50 | 33 | 2x2, Default partitions | 2 |  GreedyMaxMatch|
 
 ** Output files can be found in file_solutions.zip (all output files passed the verifier) 
+** Note: the results above are all from GCP, but in many cases the local results were much faster
   
 ## Approach 1: 
 
