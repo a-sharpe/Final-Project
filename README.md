@@ -7,7 +7,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 |           File name           |        Number of edges       | Size of Matching | Run Time (s)| Configuration (cores,_) | Iterations | Algorithm
 | ------------------------------| ---------------------------- | --- | ----| ---| --- | --|
 | com-orkut.ungraph.csv         | 117185083                    | | | |  | |
-| twitter_original_edges.csv    | 63555749                     | | | | | |
+| twitter_original_edges.csv    | 63555749                     | 92237 | 257| 3x4 on Standard Disk | 8 | Luby|
 | soc-LiveJournal1.csv          | 42851237                     | 1571286 |490  | 3x4 on Standard Disk | 9 | Luby |
 | soc-pokec-relationships.csv   | 22301964                     | 595408 | 430 | 2x2 | __ | Luby|
 | soc-pokec-relationships.csv   | 22301964                     | 740487 | 437 | 2x2, 200 partitions| __ | GreedyMaxMatch|
