@@ -4,15 +4,15 @@ Names: Alexander Sharpe and Cristobal Benavides
 
 ## Results Table
 
-|           File name           |        Number of edges       | Size of Matching | Run Time (s)| Configuration (cores,_) | Algorithm
-| ------------------------------| ---------------------------- | --- | ----| ---| --- |
-| com-orkut.ungraph.csv         | 117185083                    | | | |  |
-| twitter_original_edges.csv    | 63555749                     | | | | |
-| soc-LiveJournal1.csv          | 42851237                     | | | | |
-| soc-pokec-relationships.csv   | 22301964                     | 1486549 | 91 | 2x2, 200 partitions| GreedyMaxMatch|
-| musae_ENGB_edges.csv          | 35324                        | 2259 | 62 | 2x2 | Luby |
-| musae_ENGB_edges.csv          | 35324                        | 2749 | 62 | 2x2, Default partitions | GreedyMaxMatch |
-| log_normal_100.csv            | 2671                         | 50 | 33 | 2x2, Default partitions | GreedyMaxMatch|
+|           File name           |        Number of edges       | Size of Matching | Run Time (s)| Configuration (cores,_) | Iterations | Algorithm
+| ------------------------------| ---------------------------- | --- | ----| ---| --- | --|
+| com-orkut.ungraph.csv         | 117185083                    | | | |  | |
+| twitter_original_edges.csv    | 63555749                     | | | | | |
+| soc-LiveJournal1.csv          | 42851237                     | | | | | |
+| soc-pokec-relationships.csv   | 22301964                     | 1486549 | 91 | 2x2, 200 partitions| | GreedyMaxMatch|
+| musae_ENGB_edges.csv          | 35324                        | 2259 | 62 | 2x2 | | Luby |
+| musae_ENGB_edges.csv          | 35324                        | 2749 | 62 | 2x2, Default partitions |  | GreedyMaxMatch |
+| log_normal_100.csv            | 2671                         | 50 | 33 | 2x2, Default partitions | |  GreedyMaxMatch|
 
 ** Output files can be found in file_solutions.zip (all output files passed the verifier) 
   
