@@ -29,7 +29,8 @@ object MaximalMatchingDriver {
     var matchedEdges = sc.emptyRDD[(VertexId, VertexId)]
 
     var active = true
-
+    var counter = 0
+    
     while (active) {
       val filteredGraph = currentGraph.subgraph(epred = e =>
         !matchedVertices.value.contains(e.srcId) && !matchedVertices.value.contains(e.dstId)
@@ -64,8 +65,10 @@ object MaximalMatchingDriver {
           matchedEdges = matchedEdges.union(newMatchesRDD)
         }
       }
+    counter+=1
     }
-
+    println("took " + counter + " iterations")
+    
     matchedEdges
   }
 
@@ -115,6 +118,7 @@ object MaximalMatchingDriver {
       g = randG.subgraph(vpred = (vid, _) => !matchedBcast.value.contains(vid))
       iter += 1
     }
+    println("took " + iter + " iterations")
     matches.distinct()
   }
 
