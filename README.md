@@ -31,7 +31,7 @@ log
 ⁡
 𝑛
 )
-O(logn) iterations, where 
+iterations, where 
 𝑛
 n is the number of vertices. Additionally, maximal matchings are known to provide a 1/2-approximation of the maximum matching size.
 
