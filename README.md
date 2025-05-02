@@ -31,6 +31,11 @@ The first approach we used was a modified and more scalable greedy algorithm. Th
 
 ## Approach 2: 
 
+
+## Link to Solutions:
+
+https://drive.google.com/file/d/1BqgNJM_tSxLh-dXeyk_8G58gk4ycb0l0/view?usp=share_link
+
 ## Link to 5/2 Slideshow: 
 
 https://docs.google.com/presentation/d/1Ik2CgcAqT0gtpXBfQG9XTDm2ihWtSrsJrG6OwSOMZTU/edit#slide=id.p
