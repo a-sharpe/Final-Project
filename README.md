@@ -32,6 +32,11 @@ Our experiments confirmed Luby’s algorithm as effective for large-scale datase
 
 For smaller datasets, such as musae_ENGB_edges.csv and log_normal_100.csv, Luby’s algorithm remained accurate but was outperformed in speed by our simpler GreedyMaxMatching algorithm due to lower computational overhead. Specifically, the soc-pokec-relationships.csv dataset highlighted this clearly: GreedyMaxMatching (with optimized partitioning) achieved a significantly larger matching (740,633 edges) compared to Luby's method (595,834 edges). This demonstrates that while Luby’s method is robust and generally scalable for massive graphs, an optimized greedy approach can outperform it in specific, well-partitioned scenarios.
 
+## General Approach:
+
+If we were to receive a new test case, we would first find out any information we can about the graph: is it bipartite? Is it sparse, dense? What do the degrees of the vertices look like? How big is the file and how many edges are there? Depending on the answers to these questions, we can then determine whether the greedy algorithm will be better. Particularly, if the graph for the new case is fairly sparse or bipartite, the greedy algorithm would be the best choice as it will provide a more accurate answer in similar time to Luby. If the graph is very dense or large, Luby will most likely be the better choice as it is much more parallelizable and memory efficient. 
+
+
 ## Link to Solutions:
 
 Click on file_solutions not _MACOSX (also don't know what .DS_Store is but that is not one of the solutions): https://drive.google.com/file/d/1BqgNJM_tSxLh-dXeyk_8G58gk4ycb0l0/view?usp=share_link
