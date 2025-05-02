@@ -33,7 +33,7 @@ log
 )
 iterations, where 
 𝑛
-n is the number of vertices. Additionally, maximal matchings are known to provide a 1/2-approximation of the maximum matching size.
+n is the number of vertices. 
 
 To implement this efficiently, we leveraged Spark’s aggregateMessages API to rapidly determine the highest-priority edges for each vertex. Additionally, we broadcast the set of already matched vertices in each round to maintain memory efficiency and filter them from subsequent iterations. This design minimizes global synchronization and mitigates memory bottlenecks that typically affect simpler greedy algorithms, especially on dense or non-bipartite graphs.
 
