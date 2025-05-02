@@ -31,10 +31,13 @@ The first approach we used was a modified and more scalable greedy algorithm. Th
 
 ## Approach 2: 
 Our second, more advanced approach was inspired by Luby's probabilistic algorithm for maximal matching. This algorithm works iteratively, randomly assigning priorities to edges in each round. Every vertex then picks the incident edge with the highest priority that is the edge with the largest random value. When two connected vertices mutually choose the same edge as their top choice, that edge gets added to the matching. Afterward, matched vertices are marked and excluded from future rounds to ensure there are no overlapping matches. The process continues until no new matches can be formed or a predetermined iteration limit is reached. Since all decisions are based solely on local information, the algorithm is scalable and efficiently handles large graphs through parallel processing.
+
 We implemented this using Spark's aggregateMessages API to quickly find the highest-priority edges for each vertex. To keep memory usage low, we broadcast the set of already matched vertices and filtered them out in subsequent iterations. This design avoids the global synchronization and memory issues seen in simpler greedy algorithms, particularly when working with dense or complex graphs.
+
 Our experiments showed that Luby’s algorithm is highly effective on large-scale datasets, such as com-orkut.ungraph.csv, twitter_original_edges.csv, and soc-LiveJournal1.csv. It typically produced matchings with over 900,000 edges in fewer than 10 iterations, even for graphs with more than 117 million edges, completing these runs in under 500 seconds due to its parallel and efficient structure. On smaller datasets like musae_ENGB_edges.csv and log_normal_100.csv, Luby’s method still performed accurately, though the simpler GreedyMaxMatching often ran faster because it had less computational overhead.
+
 The dataset soc-pokec-relationships.csv particularly highlighted this trade-off: when optimized by increasing partitioning, GreedyMaxMatching yielded significantly larger matchings (740,633 edges) compared to Luby’s algorithm (595,834 edges). These results indicate that while Luby’s approach is robust and scalable for general-purpose use on massive graphs, the optimized greedy method can sometimes outperform it in targeted scenarios such as core-periphery structures like soc-pock as its based on a social media. Ultimately, Luby’s method consistently provides an effective and scalable solution for matching in large, real-world networks.
-![image](https://github.com/user-attachments/assets/c36c0878-6f71-4da7-991e-63bfc48f3c91)
+
 
 
 
