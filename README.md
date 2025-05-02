@@ -39,11 +39,10 @@ Our experiments showed that Luby’s algorithm is highly effective on large-scal
 The dataset soc-pokec-relationships.csv particularly highlighted this trade-off: when optimized by increasing partitioning, GreedyMaxMatching yielded significantly larger matchings (740,633 edges) compared to Luby’s algorithm (595,834 edges). These results indicate that while Luby’s approach is robust and scalable for general-purpose use on massive graphs, the optimized greedy method can sometimes outperform it in targeted scenarios such as core-periphery structures like soc-pock as its based on a social media. Ultimately, Luby’s method consistently provides an effective and scalable solution for matching in large, real-world networks.
 
 
-
-
 ## Link to Solutions:
 
-https://drive.google.com/file/d/1BqgNJM_tSxLh-dXeyk_8G58gk4ycb0l0/view?usp=share_link
+Click on file_solutions not _MACOSX (also don't know what .DS_Store is but that is not one of the solutions): https://drive.google.com/file/d/1BqgNJM_tSxLh-dXeyk_8G58gk4ycb0l0/view?usp=share_link
+
 
 ## Link to 5/2 Slideshow: 
 
