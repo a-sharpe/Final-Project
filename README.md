@@ -6,7 +6,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 
 |           File name           |        Number of edges       | Size of Matching | Run Time (s)| Configuration (cores,_) | Iterations | Algorithm |
 | ------------------------------| ---------------------------- | ---------------- | ------------| ------------------------| ---------- | ----------|
-| com-orkut.ungraph.csv         | 117185083                    | | | |  | |
+| com-orkut.ungraph.csv         | 117185083                    | 1336541 | 483 | 3x4 on Balanced Persistent Disk | 9 | Luby |
 | twitter_original_edges.csv    | 63555749                     | 92237  | 257  | 3x4 on Standard Disk | 8 | Luby|
 | soc-LiveJournal1.csv          | 42851237                     | 1571286 |490  | 3x4 on Standard Disk | 9 | Luby |
 | soc-pokec-relationships.csv   | 22301964                     | 595834 | 439 | 2x2 | 7 | Luby|
@@ -17,7 +17,7 @@ Names: Alexander Sharpe and Cristobal Benavides
 
 ** Output files can be found in file_solutions.zip (all output files passed the verifier) 
 
-** Note: the results above are all from GCP, but in many cases the local results were much faster
+** Note: the results above are all from GCP, but in some cases the local results were much faster
   
 ## Approach 1: 
 
